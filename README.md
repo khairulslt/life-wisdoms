@@ -1,6 +1,6 @@
 # Javascript 
 
-### Tell me what you know about NodeJS:
+## Tell me what you know about NodeJS:
 
 A common misconception about NodeJS is that it is single-threaded. 
 
@@ -32,5 +32,9 @@ If a thread is taking a long time to execute a callback (Event Loop) or a task (
 **_Performance:_** If you regularly perform heavyweight activity on either type of thread, the throughput (requests/second) of your server will suffer.
 
 **_Security:_** If it is possible that for certain input one of your threads might block, a malicious client could submit this "evil input", make your threads block, and keep them from working on other clients. This would be a Denial of Service attack.
+
+Further readings:
+
+[To NodeJS or not to NodeJS](https://www.davidhaney.io/to-node-js-or-not-to-node-js/)
 
 # Python
