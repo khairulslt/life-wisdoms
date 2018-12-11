@@ -20,9 +20,16 @@ The single listening thread kicks off the work to an I/O worker thread with a ca
 
 Node is often referred to as a non-blocking I/O model. This means that when requests arrive at a Node server, they are serviced one at a time. However, when the code serviced needs to query the DB for example (long running I/O operation), it sends the callback to a second queue and the main thread will continue running (it doesn't wait). Now when the DB operation completes and returns, the corresponding callback pulled out of the second queue and queued in a third queue where they are pending execution. When the engine gets a chance to execute something else (like when the execution stack is emptied), it picks up a callback from the third queue and executes it.
 
-**_The core idea is that the single listener thread never blocks: it only does fast, cheap processing or delegation of requests to other threads and the serving of responses to clients._**
+**_The core idea is that the single listener thread SHOULD never be blocked: it should only do fast, cheap processing or delegation of requests to other threads and the serving of responses to clients._**
 
 **_One advantage of non-blocking, asynchronous operations is that it is really fast - and you can maximize the usage of a single CPU as well as memory._**
 
+### Why should I avoid blocking the Event Loop and the Worker Pool?
+Node uses a small number of threads to handle many clients. In Node there are two types of threads: one Event Loop (aka the main loop, main thread, event thread, etc.), and a pool of k Workers in a Worker Pool (aka the threadpool).
+
+If a thread is taking a long time to execute a callback (Event Loop) or a task (Worker), we call it "blocked". While a thread is blocked working on behalf of one client, it cannot handle requests from any other clients. This provides two motivations for blocking neither the Event Loop nor the Worker Pool:
+
+Performance: If you regularly perform heavyweight activity on either type of thread, the throughput (requests/second) of your server will suffer.
+Security: If it is possible that for certain input one of your threads might block, a malicious client could submit this "evil input", make your threads block, and keep them from working on other clients. This would be a Denial of Service attack.
 
 # Python
