@@ -33,10 +33,10 @@ If a thread is taking a long time to execute a callback (Event Loop) or a task (
 
 **_Security:_** If it is possible that for certain input one of your threads might block, a malicious client could submit this "evil input", make your threads block, and keep them from working on other clients. This would be a Denial of Service attack.
 
-<ul>
+<hr>
 Further readings:
 
 [To NodeJS or not to NodeJS](https://www.davidhaney.io/to-node-js-or-not-to-node-js/)
 
-<ul>
+<hr>
 # Python
