@@ -16,7 +16,9 @@ The single listening thread kicks off the work to an I/O worker thread with a ca
 
 **_An important note regarding Node.js is that any CPU-intensive code which you write will block the entire system and make your application scale poorly or become entirely unresponsive._** As a result, you would not want to use Node.js when you need to write an application that will do CPU-intensive work such as performing calculations or creating reports.
 
-**_Blocking_** - Blocking is when the execution of additional JavaScript in the Node.js process must wait until a non-JavaScript operation completes. This happens because the event loop is unable to continue running JavaScript while a blocking operation is occurring.
+**_Blocking_** - Blocking refers to operations that block further execution until that operation finishes.
 
-Node is often referred to as a non-blocking I/O model. 
+Node is often referred to as a non-blocking I/O model. This means that when requests arrive at a Node server, they are serviced one at a time. However, when the code serviced needs to query the DB for example (long running I/O operation), it sends the callback to a second queue and the main thread will continue running (it doesn't wait). Now when the DB operation completes and returns, the corresponding callback pulled out of the second queue and queued in a third queue where they are pending execution. When the engine gets a chance to execute something else (like when the execution stack is emptied), it picks up a callback from the third queue and executes it.
+
+**_The core idea is that the single listener thread never blocks: it only does fast, cheap processing or delegation of requests to other threads and the serving of responses to clients._**
 # Python
