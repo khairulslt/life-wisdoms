@@ -37,6 +37,7 @@ If a thread is taking a long time to execute a callback (Event Loop) or a task (
 Further readings:
 
 [To NodeJS or not to NodeJS](https://www.davidhaney.io/to-node-js-or-not-to-node-js/)
+[Don't block the event loop](https://nodejs.org/en/docs/guides/dont-block-the-event-loop/)
 
 <hr>
 # Python
