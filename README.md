@@ -3,7 +3,8 @@
 ## Tell me what you know about NodeJS:
 
 ```
-Basic one liner definition => NodeJS is Javascript runtime environment that uses a single-threaded asynchronous event driven non-blocking I/O model
+Basic one liner definition => NodeJS is Javascript runtime environment that uses a single-threaded asynchronous 
+event driven non-blocking I/O model
 ```
 
 A common misconception about NodeJS is that it is single-threaded. 
