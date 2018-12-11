@@ -14,4 +14,5 @@ The single listening thread kicks off the work to an I/O worker thread with a ca
 
 **_It is thus plain to see that Node.js is indeed multi-threaded, though this functionality is not directly exposed to the Node developer._**
 
+**_An important note regarding Node.js is that any CPU-intensive code which you write will block the entire system and make your application scale poorly or become entirely unresponsive._** As a result, you would not want to use Node.js when you need to write an application that will do CPU-intensive work such as performing calculations or creating reports.
 # Python
