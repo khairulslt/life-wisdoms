@@ -21,4 +21,8 @@ The single listening thread kicks off the work to an I/O worker thread with a ca
 Node is often referred to as a non-blocking I/O model. This means that when requests arrive at a Node server, they are serviced one at a time. However, when the code serviced needs to query the DB for example (long running I/O operation), it sends the callback to a second queue and the main thread will continue running (it doesn't wait). Now when the DB operation completes and returns, the corresponding callback pulled out of the second queue and queued in a third queue where they are pending execution. When the engine gets a chance to execute something else (like when the execution stack is emptied), it picks up a callback from the third queue and executes it.
 
 **_The core idea is that the single listener thread never blocks: it only does fast, cheap processing or delegation of requests to other threads and the serving of responses to clients._**
+
+**_One advantage of non-blocking, asynchronous operations is that it is really fast - and you can maximize the usage of a single CPU as well as memory._**
+
+
 # Python
