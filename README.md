@@ -3,7 +3,7 @@
 ### Tell me what you know about NodeJS:
 
 A common misconception about NodeJS is that it is single-threaded. 
-```
+
 **_NodeJS is not single-threaded._**
 
 What it has is a single thread that listens for connections. As a developer, this single thread is all that is exposed to you - and all of the code you write is executed on this single thread. 
@@ -12,6 +12,6 @@ When a connection is received, Node’s listening thread executes your coded eve
 
 The single listening thread kicks off the work to an I/O worker thread with a callback that says “tell me when you’re done” and immediately returns to listening for the next connection. 
 
-**It is thus plain to see that Node.js is indeed multi-threaded, though this functionality is not directly exposed to the Node developer.**
-```
+**_It is thus plain to see that Node.js is indeed multi-threaded, though this functionality is not directly exposed to the Node developer._**
+
 # Python
