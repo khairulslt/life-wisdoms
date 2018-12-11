@@ -30,6 +30,7 @@ Node uses a small number of threads to handle many clients. In Node there are tw
 If a thread is taking a long time to execute a callback (Event Loop) or a task (Worker), we call it "blocked". While a thread is blocked working on behalf of one client, it cannot handle requests from any other clients. This provides two motivations for blocking neither the Event Loop nor the Worker Pool:
 
 **_Performance:_** If you regularly perform heavyweight activity on either type of thread, the throughput (requests/second) of your server will suffer.
+
 **_Security:_** If it is possible that for certain input one of your threads might block, a malicious client could submit this "evil input", make your threads block, and keep them from working on other clients. This would be a Denial of Service attack.
 
 # Python
