@@ -125,3 +125,27 @@ Taken from:
 ## Thread Safety
 
 A piece of code is considered **_thread-safe_** if it functions correctly during simulateneous execution by multiple threads. In particular, it must satisfy the need for multiple threads to access the same data - and the need for a shared piece of data to be accessible by only one thread at any given time.
+
+## Creating a mysql connection pool
+
+When two people are trying to access your database and they make the request at the same time, you need to handle this case properly - ensuring that each thread is **_thread_safe_**
+
+One of the ways to do this is by creating a **_database connection pool_**
+An easy way to do this is to use an ORM (Object Relational Mapping e.g SQLAlchemy) framework - below is a basic and a general way we create a connection pool _without_ any ORM frameworks.
+
+1) The mysql.connector.pooling module implements pooling.
+
+2) A pool opens a number of connections and handles thread safety when providing connections to requesters.
+
+3) The size of a connection pool is configurable at pool creation time. It cannot be resized thereafter.
+
+```
+dbconfig = {
+  "database": "test",
+  "user":     "joe"
+}
+
+cnx = mysql.connector.connect(pool_name = "mypool",
+                              pool_size = 3,
+                              **dbconfig)```
+                             
