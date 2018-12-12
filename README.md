@@ -133,10 +133,8 @@ When two people are trying to access your database and they make the request at 
 One of the ways to do this is by creating a **_database connection pool_**
 An easy way to do this is to use an ORM (Object Relational Mapping e.g SQLAlchemy) framework - below is a basic and a general way we create a connection pool _without_ any ORM frameworks.
 
-1) The mysql.connector.pooling module implements pooling.
-
+1) The `mysql.connector.pooling` module implements pooling.
 2) A pool opens a number of connections and handles thread safety when providing connections to requesters.
-
 3) The size of a connection pool is configurable at pool creation time. It cannot be resized thereafter.
 
 ```
