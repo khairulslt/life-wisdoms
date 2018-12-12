@@ -79,10 +79,6 @@ Further readings:
 
 # Python
 
-## What is thread safety
-
-A piece of code is considered **_thread-safe_** if it functions correctly during simulateneous execution by multiple threads. In particular, it must satisfy the need for multiple threads to access the same data - and the need for a shared piece of data to be accessible by only one thread at any given time.
-
 ## Database connection pooling 
 
 Database connection pooling is a method used to keep database connections open so they can be reused by others.
@@ -116,3 +112,16 @@ In it's simplest form, it's just a similar API call (1) to an open-connection AP
 Similarly, there's a close API call (4) which doesn't actually call the real close-connection, rather it puts the connection into the pool (5) for later use. At some point, connections in the pool may be actually closed (6).
 
 That's a pretty simplistic explanation. Real implementations may be able to handle connections to multiple servers and multiple user accounts, they may pre-allocate some baseline of connections so some are ready immediately, and they may actually close old connections when the usage pattern quietens down.
+
+<hr>
+Taken from:
+
+
+- [what-is-database-pooling](https://stackoverflow.com/questions/4041114/what-is-database-pooling)
+
+<hr>
+
+
+## Thread Safety
+
+A piece of code is considered **_thread-safe_** if it functions correctly during simulateneous execution by multiple threads. In particular, it must satisfy the need for multiple threads to access the same data - and the need for a shared piece of data to be accessible by only one thread at any given time.
