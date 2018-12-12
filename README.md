@@ -131,11 +131,17 @@ A piece of code is considered **_thread-safe_** if it functions correctly during
 When two people are trying to access your database and they make the request at the same time, you need to handle this case properly - ensuring that each thread is **_thread_safe_**
 
 One of the ways to do this is by creating a **_database connection pool_**
-An easy way to do this is to use an ORM (Object Relational Mapping e.g SQLAlchemy) framework - below is a basic and a general way we create a connection pool _without_ any ORM frameworks.
+An easy way to do this is to use an ORM (Object Relational Mapping e.g SQLAlchemy) framework 
 
-1) The `mysql.connector.pooling` module implements pooling.
+To create a connection pool _without_ any ORM frameworks:
+
+1) Use the `mysql.connector.pooling` module which implements pooling.
 2) A pool opens a number of connections and handles thread safety when providing connections to requesters.
 3) The size of a connection pool is configurable at pool creation time. It cannot be resized thereafter.
+
+Create your own pool and name it, myPool in the arguments of connection pooling, you can also declare the pool size = 5 (which is the number of database connections).
+
+Please see below for more information:
 
 ```
 dbconfig = {
@@ -145,5 +151,13 @@ dbconfig = {
 
 cnx = mysql.connector.connect(pool_name = "mypool",
                               pool_size = 3,
-                              **dbconfig)```
+                              **dbconfig) 
+                              ```
                              
+Another type of connection pool code snippet: 
+
+```
+MySQLConnectionPool(pool_name=None,
+                    pool_size=5,
+                    pool_reset_session=True,
+                    **kwargs)```
