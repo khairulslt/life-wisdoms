@@ -8,6 +8,7 @@ event driven non-blocking I/O model
 ```
 <br>
 A common misconception about NodeJS is that it is single-threaded. 
+
 <br>
 
 **_NodeJS is not single-threaded._**
