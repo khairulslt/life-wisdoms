@@ -139,7 +139,7 @@ To create a connection pool _without_ any ORM frameworks:
 2) A pool opens a number of connections and handles thread safety when providing connections to requesters.
 3) The size of a connection pool is configurable at pool creation time. It cannot be resized thereafter.
 
-Create your own pool and name it, myPool in the arguments of connection pooling, you can also declare the pool size = 5 (which is the number of database connections).
+Create your own pool and name it, myPool in the arguments of connection pooling, you can also declare the `pool_size = 3` (which is the number of database connections).
 
 Please see below for more information:
 
@@ -154,7 +154,7 @@ cnx = mysql.connector.connect(pool_name = "mypool",
                               **dbconfig)
 ```                             
                              
-Another type of connection pool code snippet: 
+Another type of connection pool code snippet with different arguments and `pool_size = 5`: 
 
 ```
 MySQLConnectionPool(pool_name=None,
