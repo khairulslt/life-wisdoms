@@ -83,6 +83,8 @@ Further readings:
 
 A piece of code is considered **_thread-safe_** if it functions correctly during simulateneous execution by multiple threads. In particular, it must satisfy the need for multiple threads to access the same data - and the need for a shared piece of data to be accessible by only one thread at any given time.
 
+## Database connection pooling 
+
 Database connection pooling is a method used to keep database connections open so they can be reused by others.
 
 Typically, opening a database connection is an expensive operation, especially if the database is remote. You have to open up network sessions, authenticate, have authorisation checked, and so on. Pooling keeps the connections active so that, when a connection is later requested, one of the active ones is used in preference to having to create another one.
@@ -106,7 +108,9 @@ Refer to the following diagram for the next few paragraphs:
                |     +-------+   (6)   +-----------+
                #===> | Close | ======> | RealClose |
                      +-------+         +-----------+
-                     ```
+                     
+```
+
 In it's simplest form, it's just a similar API call (1) to an open-connection API call which is similar to the "real" one. This first checks the pool for a suitable connection (2) and, if one is available, that's given to the client. Otherwise a new one is created (3).
 
 Similarly, there's a close API call (4) which doesn't actually call the real close-connection, rather it puts the connection into the pool (5) for later use. At some point, connections in the pool may be actually closed (6).
