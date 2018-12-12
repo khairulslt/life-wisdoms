@@ -46,4 +46,22 @@ Further readings:
 
 <hr>
 
+## Typescript
+
+**_Dynamically-typed_** languages check the types and look for type errors during runtime
+**_Statically-typed_** languages check the types and look for type errors during compile time
+
+In **_Weakly-typed_** languages, the type of values depends on how it is used (can concatenate strings and numbers)
+In **_Statically-typed_** languages, a value has a type and that can not change
+
+- Javascript is a weakly and dynamically typed language
+- Python is a strongly and dynamically typed language
+
+<hr>
+Further readings:
+
+- [Dynamic vs Weak typing](https://en.hexlet.io/courses/intro_to_programming/lessons/types/theory_unit)
+
+<hr>
+
 # Python
