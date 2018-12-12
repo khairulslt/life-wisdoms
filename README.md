@@ -78,3 +78,7 @@ Further readings:
 <br>
 
 # Python
+
+## What is thread safety
+
+A piece of code is considered **_thread-safe_** if it functions correctly during simulateneous execution by multiple threads. In particular, it must satisfy the need for multiple threads to access the same data - and the need for a shared piece of data to be accessible by only one thread at any given time.
