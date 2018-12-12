@@ -10,6 +10,7 @@ event driven non-blocking I/O model
 A common misconception about NodeJS is that it is single-threaded. 
 
 **_NodeJS is not single-threaded._**
+
 <br>
 What it has is a single thread that listens for connections. As a developer, this single thread is all that is exposed to you - and all of the code you write is executed on this single thread. 
 
