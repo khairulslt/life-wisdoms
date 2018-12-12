@@ -151,8 +151,8 @@ dbconfig = {
 
 cnx = mysql.connector.connect(pool_name = "mypool",
                               pool_size = 3,
-                              **dbconfig) 
-                              ```
+                              **dbconfig)
+```                             
                              
 Another type of connection pool code snippet: 
 
