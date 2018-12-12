@@ -56,21 +56,18 @@ Further readings:
 
 ## Typescript
 
-**_Dynamically-typed_** languages check the types and look for type errors during runtime
-**_Statically-typed_** languages check the types and look for type errors during compile time
-
-In **_weakly-typed_** languages, the type of values depends on how it is used (can concatenate strings and numbers)
-
-In **_statically-typed_** languages, a value has a type and that can not change
-
-- Javascript is a weakly and dynamically typed language
-- Python is a strongly and dynamically typed language
-
-<br>
-
 - Typescript is modern Javascript + types. Provides static typing to enable type checking at compile time. Can also be used to enforce strict null checks so you never get errors like below in Javascript at run-time
 
 ```cannot read property 'x' of undefined or undefined is not a function```
+
+- **_Dynamically-typed_** languages check the types and look for type errors during runtime
+- **_Statically-typed_** languages check the types and look for type errors during compile time
+
+- In **_weakly-typed_** languages, the type of values depends on how it is used (can concatenate strings and numbers)
+- In **_statically-typed_** languages, a value has a type and that can not change
+
+- Javascript is a weakly and dynamically typed language
+- Python is a strongly and dynamically typed language
 
 <hr>
 Further readings:
