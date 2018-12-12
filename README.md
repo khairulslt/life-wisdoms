@@ -6,7 +6,7 @@
 Basic one liner definition => NodeJS is a Javascript runtime environment that uses a single-threaded asynchronous 
 event driven non-blocking I/O model
 ```
-
+<br>
 A common misconception about NodeJS is that it is single-threaded. 
 
 **_NodeJS is not single-threaded._**
@@ -47,8 +47,7 @@ Further readings:
 
 <hr>
 
-
-
+<br>
 ## Typescript
 
 **_Dynamically-typed_** languages check the types and look for type errors during runtime
