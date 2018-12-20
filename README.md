@@ -7,6 +7,7 @@ One way we can do this is by wrapping the entire script around an immediately-in
 Using an IIFE helps protect your code as it will not be visible in the browser debugging tools
 
 <br>
+
 ## Tell me what you know about NodeJS:
 
 ```
