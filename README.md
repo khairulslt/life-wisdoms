@@ -17,7 +17,7 @@ This repo will be updated with technical questions that have bamboozled me since
 
 Further readings:
 
-- [Grab's Guide to Frontend(JS)](https://github.com/grab/front-end-guide/blob/master/README.md)
+- [Grab's Guide to Frontend (Javascript)](https://github.com/grab/front-end-guide/blob/master/README.md)
 - [Javascript Questions](https://github.com/yangshun/front-end-interview-handbook/blob/master/questions/javascript-questions.md)
 
 
