@@ -41,7 +41,7 @@ Further readings:
 - [Intro to Json Web Tokens](https://jwt.io/introduction/)
 - [Implementing Json Web Tokens in Node](https://medium.com/@siddharthac6/json-web-token-jwt-the-right-way-of-implementing-with-node-js-65b8915d550e)
 - [What Happens if Your Json Web Token Gets Stolen](https://stackoverflow.com/questions/34259248/what-if-jwt-is-stolen)
-
+- [How Does Private/Public Key Encryption Work](https://security.stackexchange.com/questions/174599/how-does-public-private-key-encryption-work)
 <hr>
 
 ## Explain the concepts of prototypes
