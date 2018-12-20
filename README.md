@@ -5,6 +5,8 @@
 
 This repo will be updated with technical questions that have bamboozled me since the start of my programming career.
 
+PS: The animal above is known as a [Capybara](https://en.wikipedia.org/wiki/Capybara)
+
 # Javascript 
 
 <br>
