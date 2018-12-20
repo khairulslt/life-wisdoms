@@ -2,11 +2,18 @@
 
 ![capybara](http://www.trbimg.com/img-570bb13b/turbine/ct-presidential-campaign-capybara-huppke-20160411 "GIANT FURRY THING")
 
+Hello, I'm a Python/Javascript developer and have decided to make a collection of technical questions in the hopes that it will help someone else (or myself) NOT get stumped during interviews anytime in the future.
 
 This repo will be updated with technical questions that have bamboozled me since the start of my programming career.
 
+### Table of Contents
+
+- [JavaScript](#javascript)
+- [Python](#python)
+
 PS: The animal above is known as a [Capybara](https://en.wikipedia.org/wiki/Capybara)
 
+<a name="javascript"></a>
 # Javascript 
 
 <br>
@@ -148,6 +155,7 @@ Further readings:
 
 <br>
 
+<a name="python"></a>
 # Python
 
 ## Database connection pooling 
