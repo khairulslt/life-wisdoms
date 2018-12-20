@@ -11,10 +11,14 @@ When a function is created in JS, two objects are created.
 1) The first one, is the function itself, (its an object and can have additional properties)
 2) The second one, is an object that gets attached to the function, accessed by function.prototype
 
-So **WHY USE PROTOTYPES** you ask?
+So **_WHY USE PROTOTYPES_** you ask?
 
 Well when creating objects in JS using constructor functions, it doesn't make sense to store separate instances of functions that do the same thing for each object as it is a waste of memory.
 
+Let's look at the examples below to have a better understanding of how prototypes work:
+
+```
+// Defining an object using a constructor function
 function Human(firstName, lastName) {
     this.firstName = firstName;
     this.lastName = lastName;
@@ -23,12 +27,25 @@ function Human(firstName, lastName) {
     }
 }
 
+// Adding a function to .prototype
 Human.prototype.greet = function() {
     console.log(`$(this.firstName) $(this.lastName)`);
 }
 
+// existing object can now use .greet function as a result of concept known as prototypical inheritance
 const alex = new Human("Alex", "Kohli");
 alex.greet(); "Alex Kohli"
+
+```
+
+<hr>
+Further readings:
+
+
+- [A Definitive Guide to Javascript Prototypes](https://hackernoon.com/a-definitive-guide-to-javascript-prototypes-2c263788021e)
+- [Prototypes in Javascript](https://hackernoon.com/prototypes-in-javascript-5bba2990e04b)
+
+<hr>
 
 <br>
 
