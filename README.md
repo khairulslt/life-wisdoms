@@ -19,6 +19,7 @@ Let's look at the examples below to have a better understanding of how prototype
 
 ```
 // Defining an object using a constructor function
+
 function Human(firstName, lastName) {
     this.firstName = firstName;
     this.lastName = lastName;
@@ -28,11 +29,13 @@ function Human(firstName, lastName) {
 }
 
 // Adding a function to .prototype
+
 Human.prototype.greet = function() {
     console.log(`$(this.firstName) $(this.lastName)`);
 }
 
 // existing object can now use .greet function as a result of concept known as prototypical inheritance
+
 const alex = new Human("Alex", "Kohli");
 alex.greet(); "Alex Kohli"
 
