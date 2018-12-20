@@ -4,6 +4,8 @@
 
 One way we can do this is by wrapping the entire script around an immediately-invoked function expression([IIFE](https://medium.com/@vvkchandra/essential-javascript-mastering-immediately-invoked-function-expressions-67791338ddc6))
 
+Using an IIFE helps protect your code as it will not be visible in the browser debugging tools
+
 ## Tell me what you know about NodeJS:
 
 ```
