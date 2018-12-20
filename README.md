@@ -10,7 +10,9 @@ This repo will be updated with technical questions that have bamboozled me since
 
 - [JavaScript](#javascript)
 - [Python](#python)
+
 Further readings:
+
 - [Grab's Guide to Frontend(JS)](https://github.com/grab/front-end-guide/blob/master/README.md)
 - [Javascript Questions](https://github.com/yangshun/front-end-interview-handbook/blob/master/questions/javascript-questions.md)
 
