@@ -1,4 +1,8 @@
+# Life Wisdoms
+
 ![capybara](http://www.trbimg.com/img-570bb13b/turbine/ct-presidential-campaign-capybara-huppke-20160411 "GIANT FURRY THING")
+
+This repo will be updated with technical questions that have bamboozled me since the start of my programming career.
 
 # Javascript 
 
