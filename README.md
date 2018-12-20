@@ -2,6 +2,36 @@
 
 <br>
 
+## Explain the concepts of prototypes
+
+To understand prototypes, we first take a look at functions in JS.
+
+When a function is created in JS, two objects are created.
+
+1) The first one, is the function itself, (its an object and can have additional properties)
+2) The second one, is an object that gets attached to the function, accessed by function.prototype
+
+So **WHY USE PROTOTYPES** you ask?
+
+Well when creating objects in JS using constructor functions, it doesn't make sense to store separate instances of functions that do the same thing for each object as it is a waste of memory.
+
+function Human(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.fullName = function() {
+        return this.firstName + "" + this.lastName;
+    }
+}
+
+Human.prototype.greet = function() {
+    console.log(`$(this.firstName) $(this.lastName)`);
+}
+
+const alex = new Human("Alex", "Kohli");
+alex.greet(); "Alex Kohli"
+
+<br>
+
 ## When you create a web app, how would you guard against public app methods being called in the browser:
 
 One way we can do this is by wrapping the entire script around an immediately-invoked function expression([IIFE](https://medium.com/@vvkchandra/essential-javascript-mastering-immediately-invoked-function-expressions-67791338ddc6))
