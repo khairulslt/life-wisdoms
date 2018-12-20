@@ -41,7 +41,11 @@ Further readings:
 - [Intro to Json Web Tokens](https://jwt.io/introduction/)
 - [Implementing Json Web Tokens in Node](https://medium.com/@siddharthac6/json-web-token-jwt-the-right-way-of-implementing-with-node-js-65b8915d550e)
 - [What Happens if Your Json Web Token Gets Stolen](https://stackoverflow.com/questions/34259248/what-if-jwt-is-stolen)
+- [Different Web Authentication Methods Explained](https://blog.risingstack.com/web-authentication-methods-explained/)
 - [How Does Private/Public Key Encryption Work](https://security.stackexchange.com/questions/174599/how-does-public-private-key-encryption-work)
+- [Session Vs Token Based Authentication](https://medium.com/@sherryhsu/session-vs-token-based-authentication-11a6c5ac45e4)
+- [JWT (JSON Web Tokens) Are Better Than Session Cookies](https://dzone.com/articles/jwtjson-web-tokens-are-better-than-session-cookies)
+
 <hr>
 
 ## Explain the concepts of prototypes
