@@ -6,6 +6,10 @@ Hello, I'm a Python/Javascript developer and have decided to make a collection o
 
 This repo will be updated with technical questions that have bamboozled me since the start of my programming career.
 
+PS: Do check out the links in **_Further readings:_**, the answers given are written in shorthand and may not paint the best overall picture of the concept in question.
+
+PSS: The animal above is known as a [Capybara](https://en.wikipedia.org/wiki/Capybara)
+
 ### Table of Contents
 
 - [JavaScript](#javascript)
@@ -16,12 +20,28 @@ Further readings:
 - [Grab's Guide to Frontend(JS)](https://github.com/grab/front-end-guide/blob/master/README.md)
 - [Javascript Questions](https://github.com/yangshun/front-end-interview-handbook/blob/master/questions/javascript-questions.md)
 
-PS: The animal above is known as a [Capybara](https://en.wikipedia.org/wiki/Capybara)
 
 <a name="javascript"></a>
 # Javascript 
 
 <br>
+
+## What are JWTs (JSON Web Tokens)
+
+Json web tokens are an open standard that defines a compact and secure way for securely transmitting information between parties as a JSON object. Basically, information sent via JWTs can be verified because they are often signed using a public/private key pair. They're a great way to transmit information because you have the freedom of design when working with JSON.
+
+When we talk about JWTs, authentication usually comes to mind. The two main ways of authentication are cookies and tokens. The biggest thing about JWTs is that it is stateless. That means that the back-end does not need to keep a record of tokens, all the data required
+to check its validity as well as convey user information is contained inside of it.
+
+<hr>
+Further readings:
+
+
+- [JWT Crash Course](https://stormpath.com/blog/where-to-store-your-jwts-cookies-vs-html5-web-storage)
+- [Intro to JWTs](https://jwt.io/introduction/)
+- [Implementing JWTs in Node](https://medium.com/@siddharthac6/json-web-token-jwt-the-right-way-of-implementing-with-node-js-65b8915d550e)
+
+<hr>
 
 ## Explain the concepts of prototypes
 
