@@ -4,7 +4,7 @@
 
 Hello, I'm a Python/Javascript developer and have decided to make a collection of technical questions in the hopes that it will help someone else (or myself) NOT get stumped during interviews anytime in the future.
 
-This repo will be updated with technical questions that have bamboozled me since the start of my programming career.
+This repo will be constantly updated with any technical questions that have bamboozle me at any one time
 
 - PS: For a better understanding, do check out the links in _further readings_ - the answers given to the questions are often written in shorthand and may not paint the best overall picture of the concept in question.
 
