@@ -6,7 +6,7 @@ Hello, I'm a Python/Javascript developer and have decided to make a collection o
 
 This repo will be updated with technical questions that have bamboozled me since the start of my programming career.
 
-PS: Do check out the links in **_Further readings:_**, the answers given are written in shorthand and may not paint the best overall picture of the concept in question.
+PS: Do check out the links in ==**_Further readings:_**==, the answers given are written in shorthand and may not paint the best overall picture of the concept in question.
 
 PSS: The animal above is known as a [Capybara](https://en.wikipedia.org/wiki/Capybara)
 
