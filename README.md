@@ -26,6 +26,18 @@ Further readings:
 
 <br>
 
+## What is a Call Stack
+
+It is a data structure that basically records where in the program we are. If we call a function to execute, we push something onto the stack, and when we return from a function, we pop something off the stack.
+
+<hr>
+Further readings:
+
+
+- [Understanding Javascript Event Loop & Call Stack](https://medium.com/@gaurav.pandvia/understanding-javascript-function-executions-tasks-event-loop-call-stack-more-part-1-5683dea1f5ec)
+
+<hr>
+
 ## What are JWTs (JSON Web Tokens)
 
 Json web tokens are an open standard that defines a compact and secure way for securely transmitting information between parties as a JSON object. Basically, information sent via JWTs can be verified because they are often signed using a public/private key pair. They're a great way to transmit information because you have the freedom of design when working with JSON.
