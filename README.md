@@ -28,7 +28,7 @@ Further readings:
 
 ## What is a Call Stack
 
-It is a data structure that basically records where in the program we are. If we call a function to execute, we push something onto the stack, and when we return from a function, we pop something off the stack.
+A Call Stack is a data structure that basically records where in the program we are. If we call a function to execute, we push something onto the stack, and when we return from a function, we pop something off the stack.
 
 <hr>
 Further readings:
