@@ -200,6 +200,13 @@ Further readings:
 <a name="python"></a>
 # Python
 
+## On Tracebacks
+
+Python programs crash when our code raise exceptions that an `except` statement doesn't handle. When this happens, Python displays the exception's message and a `traceback`. Also called a `stack trace`, the `traceback` shows
+
+1) The place in your program where the exception happened
+2) The trail of function calls that led up to it
+
 ## Database connection pooling 
 
 Database connection pooling is a method used to keep database connections open so they can be reused by others.
@@ -281,4 +288,5 @@ Another type of connection pool code snippet with different arguments and `pool_
 MySQLConnectionPool(pool_name=None,
                     pool_size=5,
                     pool_reset_session=True,
-                    **kwargs)```
+                    **kwargs)
+```
