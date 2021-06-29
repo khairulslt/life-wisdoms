@@ -207,6 +207,14 @@ Python programs crash when our code raise exceptions that an `except` statement 
 1) The place in your program where the exception happened
 2) The trail of function calls that led up to it
 
+<hr>
+Taken from:
+
+
+- [Beyond The Basic Stuff With Python](https://github.com/gaurtvin/books/blob/main/Beyond%20the%20Basic%20Stuff%20with%20Python.pdf) (By Al Sweigart, same guy who made "Automate The Boring Stuff With Python"!)
+
+<hr>
+
 ## Database connection pooling 
 
 Database connection pooling is a method used to keep database connections open so they can be reused by others.
