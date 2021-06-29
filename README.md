@@ -213,7 +213,8 @@ Python programs crash when our code raise exceptions that an `except` statement 
 Taken from:
 
 
-- [Beyond The Basic Stuff With Python](https://github.com/gaurtvin/books/blob/main/Beyond%20the%20Basic%20Stuff%20with%20Python.pdf) (By Al Sweigart, same guy who made "Automate The Boring Stuff With Python"!)
+- [Beyond The Basic Stuff With Python](https://github.com/gaurtvin/books/blob/main/Beyond%20the%20Basic%20Stuff%20with%20Python.pdf) 
+(By Al Sweigart, same guy who made ["Automate The Boring Stuff With Python"](https://automatetheboringstuff.com/))
 
 <hr>
 
