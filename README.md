@@ -202,6 +202,8 @@ Further readings:
 
 ## On Tracebacks
 
+![traceback](https://media.geeksforgeeks.org/wp-content/uploads/20191218200140/pt.jpg "GIANT ERROR OF DEATH")
+
 Python programs crash when our code raise exceptions that an `except` statement doesn't handle. When this happens, Python displays the exception's message and a `traceback`. Also called a `stack trace`, the `traceback` shows
 
 1) The place in your program where the exception happened
